@@ -1,4 +1,4 @@
 # Advanced-Programming-Testing
 Assignment work
 
-RUN MAINSCREEN.PY for best result
+RUN HOMESCREEN.PY for best result
