@@ -3,15 +3,22 @@
 #:import FadeTransition kivy.uix.screenmanager.FadeTransition
 <ComicScreenManager>:
     transition: FadeTransition()
-    color_picker: _color_picker
-    ComicCreator:
+    new_machine: _new_machine
+    load_machine: _load_machine
+    TuringCreator:
     Screen:
-        name: 'colorscreen'
-        ColorPicker:
-            id: _color_picker
-            Button:
-                text: "Select"
-                pos_hint: {'center_x': .75, 'y': .05}
-                size_hint: None, None
-                size: 150, 50
-                on_press: root.current = 'comicscreen'
+        name: 'titlescreen'
+        Button:
+            id: _new_machine
+            pos_hint: {'center_x': .75, 'y': .05}
+            size_hint: None, None
+            size: 150, 50
+            text: "Create new TM"
+            on_press: root.current = 'turingscreen'
+        Button:
+            id: _load_machine
+            text: "Load TM"
+            pos_hint: {'center_x': .75, 'y': .05}
+            size_hint: None, None
+            size: 150, 50
+            on_press: root.current = 'turingscreen'
