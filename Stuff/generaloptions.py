@@ -23,8 +23,8 @@ class GeneralOptions(BoxLayout):
             self.group_mode = False
             self.unselect_all()
 
-    def color(self, instance):
-        self.comic_creator.manager.current = 'colorscreen'
+    def new_machine(self, instance):
+        self.turing_creator.manager.current = 'titlescreen'
 
     def gestures(self, instance, value):
         pass

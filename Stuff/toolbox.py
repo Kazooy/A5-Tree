@@ -64,7 +64,7 @@ class ToolLine(ToolFigure):
         return Line(points=[ix, iy, fx, fy])
 
     def create_widget(self,ix,iy,fx,fy):
-        pos = (min(ix, fx), min(iy, fy)) 
+        pos = (min(ix, fx), min(iy, fy))
         size = (abs(fx-ix), abs(fy-iy))
         return DraggableWidget(pos = pos, size = size)
 

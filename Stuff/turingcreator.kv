@@ -20,7 +20,7 @@
             general_options: _general_options
             tool_box: _tool_box
             size_hint: None,None
-            width: root.width - _tool_box.width
+            width: root.width
             height: root.height - _general_options.height - _status_bar.height
     AnchorLayout:
         anchor_x: 'center'
@@ -30,7 +30,7 @@
             GeneralOptions:
                 id: _general_options
                 drawing_space: _drawing_space
-                comic_creator: root
+                turing_creator: root
                 size_hint: 1,None
                 height: 48
             StatusBar:
